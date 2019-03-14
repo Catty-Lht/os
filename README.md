@@ -13,7 +13,7 @@ http://hgdcg14.blog.163.com/blog/static/23325005920152257504165/
 1、	编译运行该程序（cpu.c），观察输出结果，说明程序功能。
 (编译命令： gcc -o cpu cpu.c –Wall)（执行命令：./cpu）
 2、再次按下面的运行并观察结果：执行命令：./cpu A & ; ./cpu B & ; ./cpu C & ; ./cpu D &程序cpu运行了几次？他们运行的顺序有何特点和规律？请结合操作系统的特征进行解释。
-
+```c
 1 #include <stdio.h>
 2 #include <stdlib.h>
 3 #include <sys/time.h>
@@ -34,11 +34,12 @@ http://hgdcg14.blog.163.com/blog/static/23325005920152257504165/
 18 }
 19	eturn 0;
 20	
-
+```
 三、（内存分配实验）根据以下代码完成实验。
 要求：
 2、	阅读并编译运行该程序(mem.c)，观察输出结果，说明程序功能。(命令： gcc -o mem mem.c –Wall)
 2、再次按下面的命令运行并观察结果。两个分别运行的程序分配的内存地址是否相同？是否共享同一块物理内存区域？为什么？命令：./mem &; ./mem &
+```c
 1 #include <unistd.h>
 2 #include <stdio.h>
 3 #include <stdlib.h>
@@ -58,14 +59,14 @@ http://hgdcg14.blog.163.com/blog/static/23325005920152257504165/
 17 printf("(%d) p: %d\n", getpid(), *p); // a4
 18 }
 19 return 0;
-
+ ```
 
 四、（共享的问题）根据以下代码完成实验。
 要求：
 1、	阅读并编译运行该程序，观察输出结果，说明程序功能。（编译命令：gcc -o thread thread.c -Wall –pthread）（执行命令1：./thread 1000）
 2、	尝试其他输入参数并执行，并总结执行结果的有何规律？你能尝试解释它吗？（例如执行命令2：./thread 100000）（或者其他参数。）
 3、	提示：哪些变量是各个线程共享的，线程并发执行时访问共享变量会不会导致意想不到的问题。
-
+```
 1 #include <stdio.h>
 2 #include <stdlib.h>
 3 #include "common.h"
@@ -99,5 +100,5 @@ http://hgdcg14.blog.163.com/blog/static/23325005920152257504165/
 31 printf("Final value : %d\n", counter);
 32 return 0;
 33	
-
+```
 
