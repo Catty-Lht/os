@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1560244321 source:d:\codeblocks\filesystem2\main.cpp
+	<iostream>
+	"Filesystem.h"
+
+1560244144 d:\codeblocks\filesystem2\filesystem.h
+	<vector>
+	<stdlib.h>
+	<string.h>
+	<string>
+	"Block.h"
+	<iostream>
+
+1560242510 d:\codeblocks\filesystem2\block.h
+	<stdlib.h>
+	<stdio.h>
+
+1560241908 source:d:\codeblocks\filesystem2\block.cpp
+	"Block.h"
+
+1560244349 source:d:\codeblocks\filesystem2\filesystem.cpp
+	<afxres.h>
+	"Filesystem.h"
+
